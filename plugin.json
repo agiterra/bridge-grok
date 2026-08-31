@@ -1,0 +1,6 @@
+{
+  "name": "bridge",
+  "description": "Bridge — Grok orchestrator plugin. spawn/handoff/close plus curated crew+wire MCP. No inbound SSE.",
+  "version": "2.0.3",
+  "keywords": ["bridge", "orchestrator", "grok", "mcp"]
+}

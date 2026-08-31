@@ -1,0 +1,24 @@
+{
+  "name": "@agiterra/bridge-grok",
+  "version": "2.0.3",
+  "license": "MIT",
+  "type": "module",
+  "bin": "./server.ts",
+  "scripts": {
+    "start": "bun install --no-summary && ./node_modules/@agiterra/mcp-tee/bin/mcp-tee.sh bridge bun server.ts"
+  },
+  "dependencies": {
+    "@agiterra/bridge-tools": "agiterra/bridge-tools#v2.0.0",
+    "@agiterra/crew-tools": "agiterra/crew-tools#v2.27.3",
+    "@agiterra/mcp-tee": "agiterra/mcp-tee#v0.1.0",
+    "@agiterra/wire-tools": "agiterra/wire-tools#v2.18.1",
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.10"
+  },
+  "overrides": {
+    "@agiterra/crew-tools": "agiterra/crew-tools#v2.24.1"
+  },
+  "description": "Grok plugin for Bridge \u2014 orchestrator composites (spawn/handoff/close) plus curated crew+wire MCP. No inbound SSE; grok-wire sidecar holds that."
+}
