@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "bridge": {
-      "command": "bun",
+      "command": "/opt/agiterra/bin/mcp-personai.sh",
       "args": ["${GROK_PLUGIN_ROOT}/server.ts"]
     }
   }
