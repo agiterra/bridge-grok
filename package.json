@@ -1,6 +1,6 @@
 {
   "name": "@agiterra/bridge-grok",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "license": "MIT",
   "type": "module",
   "bin": "./server.ts",
@@ -11,7 +11,7 @@
     "@agiterra/bridge-tools": "agiterra/bridge-tools#v2.0.0",
     "@agiterra/crew-tools": "agiterra/crew-tools#v2.27.3",
     "@agiterra/mcp-tee": "agiterra/mcp-tee#v0.1.0",
-    "@agiterra/wire-tools": "agiterra/wire-tools#v2.18.1",
+    "@agiterra/wire-tools": "agiterra/wire-tools#v2.24.0",
     "@modelcontextprotocol/sdk": "^1.0.0"
   },
   "devDependencies": {
