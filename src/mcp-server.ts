@@ -1045,6 +1045,9 @@ async function initDeps(): Promise<void> {
       agentName: AGENT_ID,
       keyPair: { publicKey: pubkey, privateKey: keypair.privateKey },
       ccSessionId: `bridge-rpc-${AGENT_ID}`,
+      // Helper stream under the persona identity: on wire >= 1.19.0 it starts at head and its acks
+      // never advance the persona replay cursor, so it cannot consume the persona backlog.
+      auxiliary: true,
       deliver: async ({ raw }) => { rpcClient.handleEvent(raw); },
     });
     // grok-wire-bridge already holds the persona's inbound SSE. A second
